@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Website</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styels.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#Home">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">عن الجوري</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Services">خدماتنا</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">تواصل معنا</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="Home" class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">إنشئ حديقة أحلامك</h1>
+        <p class="lead"></p>
+        <div class="mt-4">
+            <a href="#" class="btn btn-primary btn-lg mx-2">Learn More</a>
+            <a href="#" class="btn btn-outline-light btn-lg mx-2">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="About" class="AbuotJoree container">
+    <div class="text-center mb-5">
+        <h2>Our Features</h2>
+        <p class="text-muted">Check out what we offer</p>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h4 class="card-title">Fast Performance</h4>
+                    <p class="card-text">Our static website loads quickly and provides a smooth user experience.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4 class="card-title">Mobile Friendly</h4>
+                    <p class="card-text">Fully responsive design that works on all devices and screen sizes.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <h4 class="card-title">Easy to Customize</h4>
+                    <p class="card-text">Built with Bootstrap for easy customization and theming options.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="Services" class="OurServices container my-5 py-5">
+    <div class="text-center mb-5">
+        <h2>What People Say</h2>
+        <p class="text-muted">Testimonials from our clients</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Client">
+                                <p class="lead mb-4">"This website is amazing! The design is clean and it works perfectly on my phone."</p>
+                                <h5 class="mb-1">John Smith</h5>
+                                <p class="text-muted">CEO, Example Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Client">
+                                <p class="lead mb-4">"I'm impressed with the loading speed and the modern look of this static website."</p>
+                                <h5 class="mb-1">Sarah Johnson</h5>
+                                <p class="text-muted">Marketing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section id="Contact" class="Contact text-white py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to get started?</h2>
+        <p class="lead mb-4">Sign up today and experience the difference.</p>
+        <button class="btn btn-light btn-lg" id="signUpBtn">Sign Up Now</button>
+    </div>
+</section>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="btn btn-primary rounded-circle shadow" title="Go to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Footer -->
+<footer class="text-center" id="Contact">
+    <div class="container">
+        <div class="mb-4">
+            <a href="#Home" class="text-decoration-none mx-2">Home</a>
+            <a href="#About" class="text-decoration-none mx-2">About</a>
+            <a href="#Services" class="text-decoration-none mx-2">Services</a>
+            <a href="#Contact" class="text-decoration-none mx-2">Contact</a>
+        </div>
+        <div class="mb-4">
+            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-decoration-none mx-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <p class="text-muted mb-0">&copy; My Static Website. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- ------------------Bootstrap Icons------------------ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom jQuery Script -->
+<script src="script.js"></script>
+</body>
+</html>
