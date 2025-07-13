@@ -1,4 +1,8 @@
 /*Custom CSS*/
+.navbar {
+  direction: ltr;
+}
+
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x1080');
   background-size: cover;
@@ -7,7 +11,10 @@
   padding: 150px 0;
   margin-bottom: 50px;
   unicode-bidi: plaintext;
-  direction: rtl;
+}
+
+.Spacer {
+  margin: 100px 0px;
 }
 
 .feature-icon {
